@@ -87,7 +87,7 @@ struct UserInfoView: View {
 #Preview {
     UserInfoView(showUserInfo: .constant(true))
 }
-
+////
 struct ChangeInfoSheet : View {
     
     @Binding var changeInfoSheet: Bool
