@@ -23,7 +23,6 @@ struct StartView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    
                     NavigationLink("",
                                    destination: GameView().navigationBarBackButtonHidden(),
                                    isActive: $svm.startGame)
@@ -69,7 +68,7 @@ struct StartView: View {
                     
                     Button {
                         performHapticFeedback(style: .light)
-                        svm.startGame.toggle()
+                        svm.startGame = true
                     } label: {
                         Text("Start the game!")
                             .padding()

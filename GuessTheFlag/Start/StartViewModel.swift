@@ -12,8 +12,8 @@ class StartViewModel: ObservableObject {
     
     @AppStorage("name") var name: String = UserDefaults.standard.string(forKey: "username") ?? ""
     @AppStorage("age") var age: String = UserDefaults.standard.string(forKey: "age") ?? ""
-    @State var startGame = false
-     @State var showLogIn = false
-     @State var showUserInfo = false
+    @Published var startGame = false
+     @Published var showLogIn = false
+     @Published var showUserInfo = false
      
 }
